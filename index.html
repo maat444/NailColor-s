@@ -1,0 +1,480 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nail Color's - Estilo en Manos y Pies</title>
+
+    <!-- Bootstrap 5 CSS (PRIMERO) -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <!-- Nuestro CSS personalizado (DESPUÉS, para sobrescribir Bootstrap) -->
+    <link rel="stylesheet" href="styles/style.css">
+
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+        rel="stylesheet">
+
+    <!-- Favicon -->
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+</head>
+
+<body>
+    <!-- Header con logo y navegación -->
+    <header class="header">
+        <div class="container">
+            <nav class="navbar navbar-expand-lg">
+                <!-- Logo del negocio -->
+                <div class="logo nav-item">
+                    <a href="#inicio" class="navbar-brand">
+                        <img src="images/NailLogo.png" alt="Logo Nail Color's" class="logo-img">
+                        <span class="logo-text">Nail Color's</span>
+                    </a>
+                </div>
+
+                <!-- Botón hamburguesa con colores actualizados -->
+                <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav"
+                    aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon">
+                        <i class="fas fa-bars" style="color: var(--pink-primary);"></i>
+                    </span>
+                </button>
+
+                <!-- Menú de navegación -->
+                <div class="collapse navbar-collapse" id="navbarNav">
+                    <ul class="navbar-nav ms-auto nav-menu">
+                        <li class="nav-item"><a class="nav-link" href="#inicio">Inicio</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#servicios">Servicios</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#productos">Productos</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#galeria">Galería</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#contacto">Contacto</a></li>
+                        <li class="nav-item"><a class="nav-link" href="#administrador">Team</a></li>
+                    </ul>
+                </div>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <!-- Sección Hero con imagen de fondo -->
+        <section id="inicio" class="hero">
+            <div class="hero-overlay"></div>
+            <div class="container">
+                <div class="row align-items-center">
+                    <div class="col-lg-6">
+                        <div class="hero-content">
+                            <h1 class="hero-title">Belleza y Estilo en <span class="slogan">Nail Color's Manos &
+                                    Pies</span></h1>
+                            <p class="hero-subtitle">Especialistas en decoración y mantenimiento saludable de uñas</p>
+                            <p class="hero-description">En Nail Color's combinamos la elegancia de la decoración de uñas
+                                con productos de lujo, maquillaje y ropa fashion para el clima tropical. Descubre
+                                nuestro mundo de colores y estilo.</p>
+                            <div class="hero-buttons">
+                                <a href="#servicios" class="btn-hero">Ver Servicios</a>
+                                <a href="#contacto" class="btn-hero btn-outline">Reservar Cita</a>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="hero-image">
+                            <img src="images/uñas nail color's.jpg" alt="Manos con uñas decoradas profesionalmente"
+                                class="img-fluid rounded">
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Servicios con cards mejoradas -->
+        <section id="servicios" class="services">
+            <div class="container">
+                <h2 class="section-title slogan">Nuestros Servicios</h2>
+                <p class="section-subtitle">Cuidado profesional para manos y pies</p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Card 1: Manicura -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/Manicura profesional.png" class="card-img-top" alt="Manicura Profesional">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-hand-sparkles"></i>
+                                </div>
+                                <h3 class="card-title">Manicura Profesional</h3>
+                                <p class="card-description">Mantenimiento, decoración y cuidado especializado para tus
+                                    uñas. Usamos productos de alta calidad y técnicas actualizadas.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Manos</span>
+                                    <a href="#contacto" class="card-link">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Pedicura -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/Pedicura Saludable.png" class="card-img-top" alt="Pedicura Saludable">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-spa"></i>
+                                </div>
+                                <h3 class="card-title">Pedicura Saludable</h3>
+                                <p class="card-description">Cuidado integral para tus pies, incluyendo exfoliación,
+                                    hidratación y decoración. Perfecto para el clima tropical.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Pies</span>
+                                    <a href="#contacto" class="card-link">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Uñas Acrílicas -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/uñas acrílicas.jpeg" class="card-img-top" alt="Uñas Acrílicas">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-gem"></i>
+                                </div>
+                                <h3 class="card-title">Uñas Acrílicas</h3>
+                                <p class="card-description">Extensiones y decoraciones personalizadas con acrílico de
+                                    alta duración. Diseños únicos para cada ocasión.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Lujo</span>
+                                    <a href="#contacto" class="card-link">Reservar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Productos con cards mejoradas -->
+        <section id="productos" class="products">
+            <div class="container">
+                <h2 class="section-title slogan">Productos y Accesorios</h2>
+                <p class="section-subtitle">Descubre nuestra línea de productos y accesorios</p>
+
+                <div class="row row-cols-1 row-cols-md-3 g-4">
+                    <!-- Card 1: Accesorios de lujo -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/accesorios y joyas.png" class="card-img-top" alt="Accesorios de Lujo">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-crown"></i>
+                                </div>
+                                <h3 class="card-title">Accesorios y Lujo</h3>
+                                <p class="card-description">Joyas, bolsos y complementos exclusivos que realzan tu
+                                    estilo. Perfectos para looks tropicales elegantes.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Exclusivo</span>
+                                    <a href="https://wa.me/+573115357857" target="_blank" class="card-link">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 2: Maquillaje -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/Maquillaje Tropical.png" class="card-img-top" alt="Maquillaje Tropical">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-palette"></i>
+                                </div>
+                                <h3 class="card-title">Maquillaje</h3>
+                                <p class="card-description">Productos de maquillaje resistentes al calor y humedad.
+                                    Colores vibrantes inspirados en el trópico.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Beauty</span>
+                                    <a href="https://wa.me/+573115357857" target="_blank" class="card-link">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Card 3: Ropa fashion -->
+                    <div class="col">
+                        <div class="card h-100 border-0 shadow-hover">
+                            <img src="images/Ropa Fashion.jpeg" class="card-img-top" alt="Ropa Fashion">
+                            <div class="card-body">
+                                <div class="card-icon">
+                                    <i class="fas fa-tshirt"></i>
+                                </div>
+                                <h3 class="card-title">Ropa con estilo</h3>
+                                <p class="card-description">Diseños exclusivos para clima cálido. Telas frescas y
+                                    estilos que combinan comodidad y elegancia.</p>
+                            </div>
+                            <div class="card-footer bg-transparent border-0">
+                                <div class="d-flex justify-content-between align-items-center">
+                                    <span class="card-tag">Moda</span>
+                                    <a href="https://wa.me/+573115357857" target="_blank" class="card-link">Comprar</a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección de Galería con scroll automático -->
+        <section id="galeria" class="gallery">
+            <div class="container">
+                <h2 class="section-title slogan">Galería de Trabajos</h2>
+                <p class="section-subtitle">Algunos de nuestros diseños más destacados</p>
+
+                <div class="gallery-scroll-container">
+                    <div class="gallery-track">
+                        <div class="gallery-item">
+                            <img src="images/arte uñas.jpeg" alt="Diseño de uñas verde azulado">
+                            <div class="gallery-overlay">
+                                <h3>Diseño Tropical</h3>
+                                <p>Inspirado en el mar caribe</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/uñas decorando.png" alt="Uñas con diseño floral">
+                            <div class="gallery-overlay">
+                                <h3>Flores Tropicales</h3>
+                                <p>Colores vivos y texturas</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/uñas decoradas.png" alt="Uñas con piedras decorativas">
+                            <div class="gallery-overlay">
+                                <h3>Elegancia con Cristales</h3>
+                                <p>Decoración con accesorios de lujo</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/uñas spa.png" alt="Diseño geométrico en uñas">
+                            <div class="gallery-overlay">
+                                <h3>Geometría Colorida</h3>
+                                <p>Líneas y formas modernas</p>
+                            </div>
+                        </div>
+
+                        <!-- Duplicar items para efecto continuo -->
+                        <div class="gallery-item">
+                            <img src="images/arte uñas.jpeg" alt="Diseño de uñas verde azulado">
+                            <div class="gallery-overlay">
+                                <h3>Diseño Tropical</h3>
+                                <p>Inspirado en el mar caribe</p>
+                            </div>
+                        </div>
+
+                        <div class="gallery-item">
+                            <img src="images/uñas decorando.png" alt="Uñas con diseño floral">
+                            <div class="gallery-overlay">
+                                <h3>Flores Tropicales</h3>
+                                <p>Colores vivos y texturas</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Resto del contenido permanece igual -->
+        <!-- Sección de Contacto -->
+        <section id="contacto" class="contact">
+            <div class="container">
+                <h2 class="section-title slogan">Contáctanos</h2>
+                <p class="section-subtitle">Visítanos o contáctanos para reservar tu cita</p>
+
+                <div class="row">
+                    <div class="col-lg-6">
+                        <div class="contact-info">
+                            <h3>Información de Contacto</h3>
+                            <div class="contact-item">
+                                <i class="fas fa-map-marker-alt"></i>
+                                <div>
+                                    <h4>Dirección</h4>
+                                    <p>Carrera 2 Número 1-12 Camellon Principal, Anapoima Centro.</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-phone"></i>
+                                <div>
+                                    <h4>Teléfono</h4>
+                                    <p>+57 3115357857</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-envelope"></i>
+                                <div>
+                                    <h4>Email</h4>
+                                    <p>info@nailcolors.com</p>
+                                </div>
+                            </div>
+
+                            <div class="contact-item">
+                                <i class="fas fa-clock"></i>
+                                <div>
+                                    <h4>Horario</h4>
+                                    <p>Lun-Sáb: 9:00 AM - 7:00 PM</p>
+                                    <p>Domingo: 10:00 AM - 4:00 PM</p>
+                                </div>
+                            </div>
+
+                            <div class="social-links">
+                                <h4>Síguenos en Redes Sociales</h4>
+                                <div class="social-icons">
+                                    <a href="https://www.instagram.com/nail_colors29" target="_blank"><i class="fab fa-instagram"></i></a>
+                                    <a href="https://web.facebook.com/pilar.p.fajardo" target="_blank"><i class="fab fa-facebook-f"></i></a>
+                                    <a href="https://www.tiktok.com/@mariadelpilarfajardo?_r=1&_t=ZS-9315HeRyFU1/" target="_blank"><i class="fab fa-tiktok"></i></a>
+                                <!--    <a href="#"><i class="fab fa-pinterest-p"></i></a> -->
+                                    <a href="https://wa.me/+573115357857" target="_blank"><i class="fab fa-whatsapp"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="col-lg-6">
+                        <div class="contact-form">
+                            <h3>Envíanos un Mensaje</h3>
+                            <form id="formContacto">
+                                <div class="mb-3">
+                                    <input type="text" class="form-control" placeholder="Nombre completo" required id="name">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="email" class="form-control" placeholder="Correo electrónico" required id="email">
+                                </div>
+                                <div class="mb-3">
+                                    <input type="tel" class="form-control" placeholder="Teléfono" id="phone">
+                                </div>
+                                <div class="mb-3">
+                                    <select class="form-select" required id="service">
+                                        <option value="" disabled selected>Selecciona un servicio</option>
+                                        <option value="manicura">Manicura Profesional</option>
+                                        <option value="pedicura">Pedicura Saludable</option>
+                                        <option value="acrilicas">Uñas Acrílicas</option>
+                                        <option value="accesorios">Accesorios de Lujo</option>
+                                        <option value="maquillaje">Maquillaje</option>
+                                        <option value="ropa">Ropa</option>
+                                    </select>
+                                </div>
+                                <div class="mb-3">
+                                    <textarea class="form-control" placeholder="Mensaje" rows="5" required id="mesage"></textarea>
+                                </div>
+                                <button type="submit" class="btn-form w-100">Enviar Mensaje</button>
+                            </form>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Sección del perfil de administrador -->
+        <section id="administrador" class="admin">
+            <div class="container">
+                <h2 class="section-title slogan">Nail Color's</h2>
+                <p class="section-subtitle">Experiencia detrás de Nail Color's</p>
+
+                <div class="row align-items-center">
+                    <div class="col-lg-4">
+                        <div class="admin-image">
+                            <img src="images/nail color's.webp" alt="Foto de la administradora" class="img-fluid rounded">
+                        </div>
+                    </div>
+                    <div class="col-lg-8">
+                        <div class="admin-info">
+                            <br>
+                            <h3 style="text-align: center;">María del Pilar Fajardo y Lorena Fajardo</h3>
+                            <p class="admin-title text-center">Equipo fundador</p>
+                            <p class="admin-description text-center">
+                                Con más de 10 años de experiencia en el mundo de la belleza y las tendencias de moda, María del Pilar Fajardo y Lorena Fajardo,
+                                han creado Nail Color's con la visión de ofrecer un espacio donde el cuidado de las uñas se
+                                combina con elegancia y estilo.
+                            </p>
+                            <p class="admin-description text-center">
+                                Nail Color's se especializa en técnicas de decoración de uñas y también se enfoca en un estilo de vida saludable, ha desarrollado una
+                                línea exclusiva de productos que se mantienen dentro de una gama profesional y un look moderno.
+                            </p>
+                            <div class="admin-skills" style="justify-content: center;">
+                                <span class="skill">Diseño de Uñas</span>
+                                <span class="skill">Moda y accesorios</span>
+                                <span class="skill">Belleza y salud</span>
+                                <span class="skill">Emprendimiento</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-4">
+                    <div class="footer-logo nav-item">
+                        <img src="images/NailLogo.png" alt="Logo Nail Color's" class="logo-img">
+                        <div>
+                            <h3>Nail Color's</h3>
+                            <p>manos & pies</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-links">
+                        <h4>Enlaces Rápidos</h4>
+                        <ul>
+                            <li><a href="#inicio">Inicio</a></li>
+                            <li><a href="#servicios">Servicios</a></li>
+                            <li><a href="#productos">Productos</a></li>
+                            <li><a href="#galeria">Galería</a></li>
+                            <li><a href="#contacto">Contacto</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="col-lg-4">
+                    <div class="footer-contact">
+                        <h4>Contacto</h4>
+                        <p><i class="fas fa-map-marker-alt"></i> Carrera 2 Número 1-12 Camellon Principal, Anapoima Centro.</p>
+                        <p><i class="fas fa-phone"></i> +57 3115357857</p>
+                        <p><i class="fas fa-envelope"></i> info@nailcolors.com</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="footer-bottom mt-4 pt-4 border-top">
+                <p class="text-center mb-0">&copy; <span id="currentYear"></span> Nail Color's - Todos los derechos
+                    reservados</p>
+                <p class="text-center">Especialistas en belleza tropical y estilo fashion</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Bootstrap 5 JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
+    <script src="js/script.js"></script>
+</body>
+
+</html>
