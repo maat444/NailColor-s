@@ -53,11 +53,16 @@ body {
 /* Estilos para títulos y textos */
 h1,
 h2,
-h3,
 h4 {
     font-family: 'Playfair Display', serif;
     font-weight: 600;
     color: var(--black);
+}
+
+h3 {
+    font-family: 'Playfair Display', serif;
+    font-weight: 500;
+    color: var(--blue-primary);
 }
 
 .section-title {
